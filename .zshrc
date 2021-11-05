@@ -13,7 +13,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-#export ZSH="/home/darkusphantom/.oh-my-zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -83,20 +82,17 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  #ZSH 
-  zsh-syntax-highlighting #Colores a los comandos
-  zsh-autosuggestions #Sugerencia de comandos y autocompletado
-  zsh_reload #Recarga zsh sin necesidad de cerrar y abrir la terminal
+  #ZSH
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 
   #Terminal
-  alias-tips #Recomienda alias y para git
-  sudo #Permite ejecutar un comando en sudo con presionar dos veces "escape"
-  history #Muestra el historial de comandos de forma mas descriptiva
+  alias-tips
+  sudo
+  history
 
   #Herramientas
   extract #Plugin para descomprimir diversas extensiones archivos comprimidos
-  sudo #Permite ejecutar un comando en sudo con presionar dos veces "escape"
-  history #Muestra el historial de comandos de forma mas descriptiva
   #catimg #Muestra las imagenes desde la terminal (No todas salen bien pero es util)
   #urltools #decode and encode url
 
@@ -114,12 +110,13 @@ plugins=(
   #Otros
   #chucknorris #Broma de chuck norris xd
   emoji #Listado de emojis
-  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+# Resolve the problem about cocvim in nvim
+export TMPDIR="/tmp"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
