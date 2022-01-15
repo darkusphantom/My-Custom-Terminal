@@ -142,12 +142,22 @@ export TERM=xterm-256color
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+## Terminal
 alias zshconfig="vim $HOME/.zshrc"
 alias ohmyzsh="vim $HOME/.oh-my-zsh"
+alias showpath="echo $PATH"
+alias delforce="rm -rf"
+
+## C++
+alias compC++="g++ main.cpp"
+alias compOutC++="g++ main.cpp -o main.out"
+alias execOutC++="./main.out"
+
+## Git
+alias arbolito="git log --oneline --graph --decorate"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #Colorls. Permite darle color a los directorios
 #source $(dirname $(gem which colorls))/tab_complete.sh
