@@ -22,13 +22,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 #Custom Enviroment Var
-LINKS="$HOME/links"
-DESCARGAS="$HOME/Descargas"
-DOWNLOAD="$HOME/Download"
-DOCUMENTS="$HOME/Documentos"
-PICTURES="$HOME/Imágenes"
-VIDEOS="$HOME/Vídeos"
 CONFIG="$HOME/.config/"
+ZSHCONFIG="$CONFIG/zsh"
+source $ZSHCONFIG/env/var.zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
