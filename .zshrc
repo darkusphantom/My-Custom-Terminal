@@ -114,7 +114,7 @@ plugins=(
 
   #Otros
   #chucknorris #Broma de chuck norris xd
-  emoji #Listado de emojis
+  #emoji #Listado de emojis
 )
 
 source $ZSH/oh-my-zsh.sh
