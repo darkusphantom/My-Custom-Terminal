@@ -1,41 +1,28 @@
-# My Custom Terminal with ZSH and Oh-my-zsh
+# Custom Terminal with ZSH and Oh-my-zsh by DarkusPhantom
 
 ## Instalation
+For the instalation, you need to check this post that i wrote. That post has the instructions to install ZSH, oh-my-zsh, install plugins and custom the terminal
 
 ## Plugins
 ### ZSH
-+ **zsh-syntax-highlighting:** Colores a los comandos
-+ **zsh-autosuggestions:** Sugerencia de comandos y autocompletado
++ **zsh-syntax-highlighting:** Commands with colors
++ **zsh-autosuggestions:** Suggest commands and autocomplete
 
 ### Terminal
-+ **alias-tips:** Recomienda alias y para git
-+ **sudo:** Permite ejecutar un comando en sudo con presionar dos veces "escape"
-+ **history:** Muestra el historial de comandos de forma mas descriptiva
++ **alias-tips:** Recommend alias for commands and git
++ **sudo:** Execute the command sudo clicking two times `esc`.
++ **history:** Show command history with more descritpion.
 
 ### Tools
-+ **extract:** Plugin para descomprimir diversas extensiones archivos comprimidos
-+ **catimg:** Muestra las imagenes desde la terminal (No todas salen bien pero es util)
++ **extract:** Plugin to descompress with a variety of extension.
 + **urltools:** Decode and encode url
-+ **catimg:** Muestra las imagenes desde la terminal (No todas salen bien pero es util)
-+ **urltools:** decode and encode url
-
 
 ### Entornos de trabajo
-+ **git: Añade alias de git para mejorar productividad
-+ **nvm: Añade autocompletado de nvm
-+ **npm:** Añade alias para npm
-+ **sublime:** Añade alias para sublime, desde abrir un archivo con el hasta buscar un proyecto
++ **git:** Add git alias to improve productivity.
++ **nvm:** Add nvm autocomplete.
++ **npm:** Add npm alias
 
 ### Documentacion
-+ **frontend-search:** Busca documentacion de internet desde la terminal
-+ **node:** Abre la documentacion de node
-+ **colored-man-pages:** Le agrega color al comando man. Comando de ayuda
-
-### Otros
-+ **chucknorris:** Broma de chuck norris xd
-+ **emoji** Listado de emojis
-
-+ cating
-+ pip
-+ python
-+ bindkey
++ **frontend-search:** Search internet documentation with the console.
++ **node:** Open node documentation
++ **colored-man-pages:** Add colors to command man.
