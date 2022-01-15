@@ -21,6 +21,15 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+#Custom Enviroment Var
+LINKS="$HOME/links"
+DESCARGAS="$HOME/Descargas"
+DOWNLOAD="$HOME/Download"
+DOCUMENTS="$HOME/Documentos"
+PICTURES="$HOME/Imágenes"
+VIDEOS="$HOME/Vídeos"
+CONFIG="$HOME/.config/"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
