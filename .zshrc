@@ -113,6 +113,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 # Resolve the problem about cocvim in nvim
