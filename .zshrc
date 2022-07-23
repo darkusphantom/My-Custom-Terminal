@@ -22,7 +22,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 #Custom Enviroment Var
-CONFIG="$HOME/.config/"
+CONFIG="$HOME/.config"
 ZSHCONFIG="$CONFIG/zsh"
 source $ZSHCONFIG/env/var.zsh
 
@@ -118,7 +118,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 # Resolve the problem about cocvim in nvim
