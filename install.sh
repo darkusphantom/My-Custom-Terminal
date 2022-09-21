@@ -52,9 +52,16 @@ installThemePowerLevel() {
   wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
   mkdir MesloLGS
   mv *.ttf MesloLGS
-  sudo mv *.ttf /usr/share/fonts/MesloLGS
+  sudo mv MesloLGS /usr/share/fonts/MesloLGS
 
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+  textReplace=\"robbyrussell\"
+  isTextReplace=`less ~/.zshrc | grep $textReplace`
+
+  if $isTextReplace -ne "powerlevel10k/powerlevel10k"; then
+    sed -i 's/"robbyrussell"/"powerlevel10k\/powerlevel10k"/g' ~/.zshrc
+  fi
 
   echo "Successful install"
   sleep 2
@@ -68,10 +75,8 @@ installPlugins() {
 
   #Plugins ZSH Syntax
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
   #Plugins ZSH sugestion
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
   #Plugins alias ZSH
   git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
 

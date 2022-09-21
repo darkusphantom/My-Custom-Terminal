@@ -162,3 +162,6 @@ source $ZSHCONFIG/alias/c++/alias.zsh
 
 #Colorls. Permite darle color a los directorios
 #source $(dirname $(gem which colorls))/tab_complete.sh
+
+# LANG
+export LANG=en_US.UFT-8
